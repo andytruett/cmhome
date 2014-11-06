@@ -1,0 +1,421 @@
+//                       ###
+//                        ##
+//                        ##
+//     #####    #####     ##      #####   ## ###    #####
+//    ##       ##   ##    ##     ##   ##  ###      ##
+//    ##       ##   ##    ##     ##   ##  ##        ####
+//    ##       ##   ##    ##     ##   ##  ##           ##
+//     #####    #####    ####     #####   ##       #####
+//
+//
+$blue: hsla(184, 59%, 41%, 1);
+$tan: hsla(36, 22%, 82%, 1);
+$orange: hsla(19, 67%, 57%, 1);
+$brown: hsla(22, 26%, 27%, 1);
+$white: hsla(0, 0%, 98%, 1);
+$black: hsla(22, 26%, 10%, .8);
+
+
+
+
+
+
+
+//      ##                                           ##
+//      ##                                           ##
+//                                                   ##
+//    ####     ### ##   ######    #####   ## ###   ######    #####
+//      ##     ## # ##  ##   ##  ##   ##  ###        ##     ##
+//      ##     ## # ##  ##   ##  ##   ##  ##         ##      ####
+//      ##     ## # ##  ##   ##  ##   ##  ##         ##         ##
+//    ######   ##   ##  ######    #####   ##          ###   #####
+//                      ##
+//                      ##
+
+@import 'normalize';
+@import 'typebase';
+
+
+
+
+
+
+
+
+
+//    ##
+//    ##
+//    ##
+//    ######    #####   ##  ##
+//    ##   ##  ##   ##   ####
+//    ##   ##  ##   ##    ##
+//    ##   ##  ##   ##   ####
+//    ######    #####   ##  ##
+//
+//
+//                           ##            ###
+//                           ##             ##
+//                           ##             ##
+//    ### ##    #####    ######   #####     ##
+//    ## # ##  ##   ##  ##   ##  ##   ##    ##
+//    ## # ##  ##   ##  ##   ##  #######    ##
+//    ## # ##  ##   ##  ##   ##  ##         ##
+//    ##   ##   #####    ######   #####    ####
+//
+//
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+
+
+
+
+//    ##         ##               ###
+//    ##         ##                ##
+//    ##         ##                ##
+//    ######   ######   ### ##     ##
+//    ##   ##    ##     ## # ##    ##
+//    ##   ##    ##     ## # ##    ##
+//    ##   ##    ##     ## # ##    ##
+//    ##   ##     ###   ##   ##   ####
+//
+//
+html {
+  font-family: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  color: $white;
+}
+
+body {
+  overflow-x: hidden;
+
+  width: 100vw;
+
+  background-color: $tan;
+}
+
+
+
+
+
+
+
+
+
+//    ##                              ##
+//    ##                              ##
+//    ##                              ##
+//    ######    #####    ######   ######   #####   ## ###
+//    ##   ##  ##   ##  ##   ##  ##   ##  ##   ##  ###
+//    ##   ##  #######  ##   ##  ##   ##  #######  ##
+//    ##   ##  ##       ##  ###  ##   ##  ##       ##
+//    ##   ##   #####    ### ##   ######   #####   ##
+//
+//
+
+header {
+  font-size: .8rem;
+  line-height: 3.75rem;
+
+  position: fixed;
+
+  width: 100%;
+  height: 4.75rem;
+  padding: .5rem;
+  padding-right: 2.5rem;
+
+  transition: all 500ms ease-in-out;
+  text-align: right;
+
+  color: $white;
+  border-bottom: 2px solid $white;
+  background-color: $orange;
+  a {
+    margin-right: 1rem;
+
+    transition: all 500ms ease-in-out;
+  }
+  &.smaller {
+    line-height: 1.5rem;
+
+    height: 2.5rem;
+    & .logo {
+      transform: scale(.5,.5);
+      top: .125rem;
+    }
+  }
+  @media (max-width: 1050px) {
+    padding: .5rem 0;
+  }
+}
+
+
+
+
+
+//     ###
+//      ##
+//      ##
+//      ##      #####    ######   #####
+//      ##     ##   ##  ##   ##  ##   ##
+//      ##     ##   ##  ##   ##  ##   ##
+//      ##     ##   ##  ##   ##  ##   ##
+//     ####     #####    ######   #####
+//                           ##
+//                       #####
+
+img.logo {
+  position: absolute;
+  top: .25rem;
+  left: 3.5rem;
+
+  transition: all 500ms ease-in-out;
+  transform: scale(1,1);
+  transform-origin: top left;
+  @media (max-width: 1050px) {
+    left: .5rem;
+  }
+}
+
+
+
+
+
+
+
+
+//         ##    ##
+//         ##    ##
+//         ##
+//     ######  ####     ### ##    #####
+//    ##   ##    ##      ## #    ##
+//    ##   ##    ##      ## #     ####
+//    ##   ##    ##       ##         ##
+//     ######  ######     ##     #####
+//
+//
+
+div {
+  height: 100vh;
+  margin: 0 auto;
+
+  background-repeat: no-repeat;
+  // I can't decide if I like fixed backgrounds or not
+  // background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+
+.foreground {
+  padding: 6rem 2rem 2rem;
+
+  background-color: hsla(22, 26%, 27%, .35);
+}
+
+.hero {
+  // background-image: url('../images/hero.jpg');
+}
+
+.lovers {
+  background-image: url('../images/lovers.jpg');
+}
+
+.fastidious {
+  background-image: url('../images/fastidious.jpg');
+  background-position: center center;
+}
+
+.sharing {
+  background-image: url('../images/sharing.jpg');
+  background-position: bottom center;
+}
+
+.visitors {
+  background-image: url('../images/visitors.jpg');
+  background-position: bottom center;
+}
+
+.signup {
+  background-color: $tan;
+  background-image: url('../images/signup.jpg');
+}
+
+
+
+
+
+
+
+
+//      ####                       ##
+//     ##                          ##
+//     ##                          ##
+//    #####     #####    #####   ######    #####   ## ###
+//     ##      ##   ##  ##   ##    ##     ##   ##  ###
+//     ##      ##   ##  ##   ##    ##     #######  ##
+//     ##      ##   ##  ##   ##    ##     ##       ##
+//     ##       #####    #####      ###    #####   ##
+//     #
+//
+
+footer {
+  line-height: 3rem;
+
+  display: none;
+
+  width: 100%;
+
+  text-align: center;
+
+  color: $white;
+  background-color: $orange;
+  a {
+    margin-right: 2rem;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+//    ##                              ##    ##
+//    ##                              ##    ##
+//    ##                              ##
+//    ######    #####    ######   ######  ####     ## ###    ######   #####
+//    ##   ##  ##   ##  ##   ##  ##   ##    ##     ###  ##  ##   ##  ##
+//    ##   ##  #######  ##   ##  ##   ##    ##     ##   ##  ##   ##   ####
+//    ##   ##  ##       ##  ###  ##   ##    ##     ##   ##  ##   ##      ##
+//    ##   ##   #####    ### ##   ######  ######   ##   ##   ######  #####
+//                                                               ##
+//                                                           #####
+
+h2,
+h3 {
+  color: $white;
+  text-shadow: 0 3px 6px $black;
+}
+
+h2 {
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+//     ###       ##              ##
+//      ##       ##              ##
+//      ##                       ##
+//      ##     ####     ## ###   ##  ##    #####
+//      ##       ##     ###  ##  ## ##    ##
+//      ##       ##     ##   ##  ####      ####
+//      ##       ##     ##   ##  ## ##        ##
+//     ####    ######   ##   ##  ##  ##   #####
+//
+//
+
+a:link {
+  text-decoration: none;
+
+  color: $white;
+}
+
+a:visited {
+  color: $white;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+
+  color: $white;
+}
+
+a:active {
+  color: $white;
+}
+
+
+
+
+
+
+
+
+//    ##                  ##       ##
+//    ##                  ##       ##
+//    ##                  ##       ##
+//    ######   ##   ##  ######   ######    #####   ## ###
+//    ##   ##  ##   ##    ##       ##     ##   ##  ###  ##
+//    ##   ##  ##   ##    ##       ##     ##   ##  ##   ##
+//    ##   ##  ##  ###    ##       ##     ##   ##  ##   ##
+//    ######    ### ##     ###      ###    #####   ##   ##
+//
+
+.button {
+  font: inherit;
+  line-height: 1rem;
+
+  padding: .25rem 2rem;
+
+  border: $white;
+  border-radius: 7.5px;
+}
+
+.blue-bg {
+  background-color: $blue;
+}
+
+a.white-bg {
+  color: $orange;
+  background-color: $white;
+}
+
+
+//               ##          ##
+//               ##          ##
+//                           ##
+//    ### ##   ####      ######   #####    #####
+//     ## #      ##     ##   ##  ##   ##  ##   ##
+//     ## #      ##     ##   ##  #######  ##   ##
+//      ##       ##     ##   ##  ##       ##   ##
+//      ##     ######    ######   #####    #####
+//
+//
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
