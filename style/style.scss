@@ -18,8 +18,33 @@ $black: hsla(22, 26%, 10%, .8);
 
 
 
+//                           ##    ##
+//                           ##    ##
+//                           ##
+//    ### ##    #####    ######  ####      ######
+//    ## # ##  ##   ##  ##   ##    ##     ##   ##
+//    ## # ##  #######  ##   ##    ##     ##   ##
+//    ## # ##  ##       ##   ##    ##     ##  ###
+//    ##   ##   #####    ######  ######    ### ##
+//
+//                                          ##
+//                                          ##
+//
+//     ######  ##   ##   #####   ## ###   ####      #####    #####
+//    ##   ##  ##   ##  ##   ##  ###        ##     ##   ##  ##
+//    ##   ##  ##   ##  #######  ##         ##     #######   ####
+//    ##   ##  ##  ###  ##       ##         ##     ##           ##
+//     ######   ### ##   #####   ##       ######    #####   #####
+//         ##
+//         ##
 
+$header-break-1: 'screen and (max-width: 1140px), screen and (max-device-width: 1140px) and (orientation: portrait)';
 
+$header-break-2: 'screen and (max-width: 1020px), screen and (max-device-width: 1020px) and (orientation: portrait)';
+
+$header-break-3: 'screen and (max-width: 530px), screen and (max-device-width: 530px) and (orientation: portrait)';
+
+$header-break-4: 'screen and (max-width: 365px), screen and (max-device-width: 365px) and (orientation: portrait)';
 
 //      ##                                           ##
 //      ##                                           ##
@@ -137,15 +162,24 @@ header {
   padding-right: 2.5rem;
 
   transition: all 500ms ease-in-out;
-  text-align: right;
 
   color: $white;
   border-bottom: 2px solid $white;
   background-color: $orange;
   a {
     margin-right: 1rem;
-
     transition: all 500ms ease-in-out;
+
+    @media #{$header-break-2} {
+      margin-right: .5rem;
+    }
+
+    @media #{$header-break-3} {
+      display: block;
+      margin: 0;
+      line-height: 1.25rem;
+
+    }
   }
   &.smaller {
     line-height: 1.5rem;
@@ -157,12 +191,15 @@ header {
       transform: scale(.5,.5);
     }
   }
-  @media (max-width: 1140px) {
+  @media #{$header-break-1} {
     padding: .5rem 0;
   }
+
+  @media #{$header-break-2} {
+    height: 8rem;
+  }
+
 }
-
-
 
 
 
@@ -185,11 +222,33 @@ img.logo {
   transition: all 500ms ease-in-out;
   transform: scale(1,1);
   transform-origin: top left;
-  @media (max-width: 1140px) {
+  @media #{$header-break-1} {
     left: .5rem;
+  }
+  @media #{$header-break-2} {
+    transform: scale(.5,.5);
   }
 }
 
+
+//
+//
+//
+//    ### ##    #####   ## ###   ##   ##
+//    ## # ##  ##   ##  ###  ##  ##   ##
+//    ## # ##  #######  ##   ##  ##   ##
+//    ## # ##  ##       ##   ##  ##  ###
+//    ##   ##   #####   ##   ##   ### ##
+//
+//
+
+.hamburger {
+  margin: 0;
+  line-height: 1rem;
+  position: fixed;
+  top: .75rem;
+  left: 50%;
+}
 
 //
 //
@@ -204,8 +263,45 @@ img.logo {
 
 nav {
   float: right;
+  text-align: right;
+  width: 100%;
+
+  @media #{$header-break-2} {
+    margin-top: .75rem;
+  }
+
+  @media #{$header-break-3} {
+   margin-top: 2rem;
+   text-align: center;
+ }
 }
 
+//               ##                         ##
+//               ##                         ##
+//
+//     #####   ####      ######  ## ###   ####     ## ###
+//    ##         ##     ##   ##  ###  ##    ##     ###  ##
+//     ####      ##     ##   ##  ##   ##    ##     ##   ##
+//        ##     ##     ##   ##  ##   ##    ##     ##   ##
+//    #####    ######    ######  ##   ##  ######   ##   ##
+//                           ##
+//                       #####
+
+.signin {
+  @media #{$header-break-2} {
+    position: fixed;
+    top: .5rem;
+    right: .25rem;
+    z-index: 11;
+  }
+  @media #{$header-break-3} {
+    top: .5rem;
+  }
+  @media #{$header-break-4} {
+    position: inherit;
+    width: auto;
+  }
+}
 
 
 //    ##
@@ -465,6 +561,7 @@ a:active {
 //
 
 .button {
+  width: auto;
   font: inherit;
   line-height: 1rem;
 
