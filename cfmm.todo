@@ -3,7 +3,8 @@ todo:
   http://www.videvo.net/video/coffee-cup/421
 
   [ ] make responsive
-  breakpoint at 1020px for header
+      <800 .smaller -> show menu icon that toggles fullsize
+
 
   [ ] improve copy in divs
 
