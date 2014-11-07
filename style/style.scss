@@ -176,7 +176,7 @@ header {
 
     @media #{$header-break-3} {
       display: block;
-      margin: 0;
+      margin: 0 2rem;
       line-height: 1.25rem;
 
     }
@@ -190,15 +190,24 @@ header {
 
       transform: scale(.5,.5);
     }
+    @media #{$header-break-3} {
+      & nav {
+        display: none;
+      }
+    }
+
   }
   @media #{$header-break-1} {
     padding: .5rem 0;
   }
 
-  @media #{$header-break-2} {
+  @media #{$header-break-3} {
     height: 8rem;
   }
 
+  @media #{$header-break-4} {
+    height: 11rem;
+  }
 }
 
 
@@ -296,6 +305,7 @@ nav {
   }
   @media #{$header-break-3} {
     top: .5rem;
+    margin: 0;
   }
   @media #{$header-break-4} {
     position: inherit;
@@ -414,6 +424,10 @@ div {
 
   padding: 6rem 4rem 2rem;
 
+  @media #{$header-break-3} {
+    padding: 8rem 4rem 2rem;
+  }
+
   background-color: hsla(22, 26%, 27%, .35);
 }
 
@@ -432,6 +446,10 @@ div {
 
   height: 60vh;
   margin-left: 2rem;
+
+  @media #{$header-break-3} {
+    display: none;
+  }
 }
 
 
@@ -569,6 +587,11 @@ a:active {
 
   border: $white;
   border-radius: 7.5px;
+
+  @media #{$header-break-4} {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 .blue-bg {
