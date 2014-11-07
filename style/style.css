@@ -424,7 +424,7 @@ header.smaller .logo {
   -ms-transform: scale(0.5, 0.5);
   transform: scale(0.5, 0.5);
 }
-@media (max-width: 1050px) {
+@media (max-width: 1140px) {
   header {
     padding: .5rem 0;
   }
@@ -443,10 +443,14 @@ img.logo {
   -ms-transform-origin: top left;
   transform-origin: top left;
 }
-@media (max-width: 1050px) {
+@media (max-width: 1140px) {
   img.logo {
     left: .5rem;
   }
+}
+
+nav {
+  float: right;
 }
 
 div {
@@ -461,8 +465,8 @@ div {
 .hero video {
   position: fixed;
   z-index: -100;
-  right: 50%;
   top: 0;
+  right: 50%;
   width: auto;
   min-width: 100%;
   height: auto;
@@ -478,7 +482,9 @@ div {
 }
 
 .lovers {
+  background-color: #574033;
   background-image: url("../images/lovers.jpg");
+  background-attachment: fixed;
 }
 
 .fastidious {
@@ -486,19 +492,22 @@ div {
   background-position: center center;
 }
 
+.visitors {
+  background-color: #574033;
+  background-image: url("../images/visitors.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+
 .sharing {
   background-image: url("../images/sharing.jpg");
   background-position: bottom center;
 }
 
-.visitors {
-  background-image: url("../images/visitors.jpg");
-  background-position: bottom center;
-}
-
 .signup {
-  background-color: #dbd3c7;
+  background-color: #574033;
   background-image: url("../images/signup.jpg");
+  background-attachment: fixed;
 }
 
 .foreground {
