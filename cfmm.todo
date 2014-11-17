@@ -5,15 +5,14 @@ todo:
   [ ] make responsive
       <800 .smaller -> show menu icon that toggles fullsize
 
-
   [ ] improve copy in divs
 
   [ ] make contact form
 
   [ ] make 'for coffee shops' page
 
-  [ ] fix nav links
+  [x] fix nav links @done (17-11-14 17:01)
 
-  [ ] alternate background fixed positioning
+  [x] alternate background fixed positioning @done (17-11-14 17:01)
 
-  [ ] alternate background fallback colors
+  [x] alternate background fallback colors @done (17-11-14 17:01)
