@@ -436,7 +436,7 @@ header.smaller .logo {
 }
 @media screen and (max-width: 800px), screen and (max-device-width: 800px) and (orientation: portrait) {
   header {
-    height: 4.25rem;
+    height: 4rem;
   }
 }
 @media screen and (max-width: 530px), screen and (max-device-width: 530px) and (orientation: portrait) {
@@ -497,7 +497,7 @@ nav {
 }
 @media screen and (max-width: 800px), screen and (max-device-width: 800px) and (orientation: portrait) {
   nav {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
   }
 }
 @media screen and (max-width: 530px), screen and (max-device-width: 530px) and (orientation: portrait) {
@@ -529,7 +529,7 @@ nav a {
     position: fixed;
     right: .25rem;
     z-index: 11;
-    top: .5rem;
+    top: .25rem;
     margin: 0;
   }
 }

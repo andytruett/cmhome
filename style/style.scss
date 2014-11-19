@@ -181,12 +181,12 @@ header {
 
 
     @media #{$header-break-530} {
-      & nav {
+      nav {
         display: none;
       }
     }
-
   }
+
   @media #{$header-break-1140} {
     padding: .5rem 0;
   }
@@ -197,7 +197,7 @@ header {
   }
 
   @media #{$header-break-800} {
-    height: 4.25rem;
+    height: 4rem;
   }
 
   @media #{$header-break-530} {
@@ -280,7 +280,7 @@ nav {
   }
 
   @media #{$header-break-800} {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
   }
 
   @media #{$header-break-530} {
@@ -318,13 +318,12 @@ nav {
 
 .signin {
   @media #{$header-break-1020} {
-
   }
   @media #{$header-break-800} {
     position: fixed;
     right: .25rem;
     z-index: 11;
-    top: .5rem;
+    top: .25rem;
     margin: 0;
   }
   @media #{$header-break-365} {
