@@ -2,7 +2,10 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style/style.min.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  </script>
+  <script src="/js/functions.js">
+  </script>
   <script>
     $(function() {
       $(window).scroll(function() {
@@ -28,7 +31,7 @@
       <a href="//app.coffeememo.com" class="button white-bg signin">Sign in</a>
     </nav>
   </header>
-  <div class="hero">
+  <div id="hero" class="hero">
     <video autoplay loop id="bgvid">
       <source src="images/coffee.webm" type="video/webm">
       </video>
@@ -43,34 +46,39 @@
             Keep track of your favorite blends<br>
             &amp; brews, right from your phone
           </h3>
+          <a href="#lovers" class="down-arrow">&darr;</a>
         </div>
       </div>
     </div>
-    <div class="lovers">
+    <div id="lovers" class="lovers">
       <div class="foreground">
         <h2>For coffee lovers</h2>
         <h3>Take notes about today's drink, right where you sit</h3>
+        <a href="#notetakers" class="down-arrow">&darr;</a>
       </div>
     </div>
-    <div class="fastidious">
+    <div id="notetakers" class="fastidious">
       <div class="foreground">
         <h2>For note takers</h2>
         <h3>Add specific details about coffee origin, processing, roasting method, how it was brewed, and what you love about it</h3>
+        <a href="#visitors" class="down-arrow">&darr;</a>
       </div>
     </div>
-    <div class="visitors">
+    <div id="visitors" class="visitors">
       <div class="foreground">
         <h2>For visitors</h2>
         <h3>Discover other coffees that you might enjoy when you visit a new coffee shop or city</h3>
+        <a href="#sharing" class="down-arrow">&darr;</a>
       </div>
     </div>
-    <div class="sharing">
+    <div id="sharing" class="sharing">
       <div class="foreground">
         <h2>For sharing</h2>
         <h3>Compare notes with friends, family, and other coffee lovers</h3>
+        <a href="#signup" class="down-arrow">&darr;</a>
       </div>
     </div>
-    <div class="signup">
+    <div id="signup" class="signup">
       <div class="foreground">
         <h2>Ready to get started?</h2>
       </div>
