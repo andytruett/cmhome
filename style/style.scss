@@ -13,10 +13,7 @@ $tan: hsla(36, 22%, 82%, 1);
 $orange: hsla(19, 67%, 57%, 1);
 $brown: hsla(22, 26%, 27%, 1);
 $white: hsla(0, 0%, 98%, 1);
-$black: hsla(22, 26%, 10%, .8);
-
-
-
+$black: hsla(22, 26%, 10%, 0.8);
 
 //                           ##    ##
 //                           ##    ##
@@ -38,15 +35,15 @@ $black: hsla(22, 26%, 10%, .8);
 //         ##
 //         ##
 
-$header-break-1140: 'screen and (max-width: 1140px), screen and (max-device-width: 1140px) and (orientation: portrait)';
+$header-break-1140: "screen and (max-width: 1140px), screen and (max-device-width: 1140px) and (orientation: portrait)";
 
-$header-break-1020: 'screen and (max-width: 1020px), screen and (max-device-width: 1020px) and (orientation: portrait)';
+$header-break-1020: "screen and (max-width: 1020px), screen and (max-device-width: 1020px) and (orientation: portrait)";
 
-$header-break-800: 'screen and (max-width: 800px), screen and (max-device-width: 800px) and (orientation: portrait)';
+$header-break-800: "screen and (max-width: 800px), screen and (max-device-width: 800px) and (orientation: portrait)";
 
-$header-break-530: 'screen and (max-width: 530px), screen and (max-device-width: 530px) and (orientation: portrait)';
+$header-break-530: "screen and (max-width: 530px), screen and (max-device-width: 530px) and (orientation: portrait)";
 
-$header-break-365: 'screen and (max-width: 365px), screen and (max-device-width: 365px) and (orientation: portrait)';
+$header-break-365: "screen and (max-width: 365px), screen and (max-device-width: 365px) and (orientation: portrait)";
 
 //      ##                                           ##
 //      ##                                           ##
@@ -59,16 +56,8 @@ $header-break-365: 'screen and (max-width: 365px), screen and (max-device-width:
 //                      ##
 //                      ##
 
-@import 'normalize';
-@import 'typebase';
-
-
-
-
-
-
-
-
+@import "normalize";
+@import "typebase";
 
 //    ##
 //    ##
@@ -100,14 +89,6 @@ html {
   box-sizing: inherit;
 }
 
-
-
-
-
-
-
-
-
 //    ##         ##               ###
 //    ##         ##                ##
 //    ##         ##                ##
@@ -119,7 +100,10 @@ html {
 //
 //
 html {
-  font-family: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans",
+    "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 
   color: $white;
 }
@@ -131,14 +115,6 @@ body {
 
   background-color: $tan;
 }
-
-
-
-
-
-
-
-
 
 //    ##                              ##
 //    ##                              ##
@@ -160,7 +136,7 @@ header {
 
   width: 100%;
   height: 4.75rem;
-  padding: .5rem;
+  padding: 0.5rem;
   padding-right: 2.5rem;
 
   transition: all 500ms ease-in-out;
@@ -174,11 +150,10 @@ header {
 
     height: 2.5rem;
     & .logo {
-      top: .125rem;
+      top: 0.125rem;
 
-      transform: scale(.5, .5);
+      transform: scale(0.5, 0.5);
     }
-
 
     @media #{$header-break-530} {
       nav {
@@ -188,7 +163,7 @@ header {
   }
 
   @media #{$header-break-1140} {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   @media #{$header-break-1020} {
@@ -209,8 +184,6 @@ header {
   }
 }
 
-
-
 //     ###
 //      ##
 //      ##
@@ -224,21 +197,20 @@ header {
 
 img.logo {
   position: absolute;
-  top: .25rem;
+  top: 0.25rem;
   left: 3.5rem;
 
   transition: all 500ms ease-in-out;
-  transform: scale(1,1);
+  transform: scale(1, 1);
   transform-origin: top left;
   @media #{$header-break-1140} {
-    left: .5rem;
+    left: 0.5rem;
   }
   @media #{$header-break-1020} {
-    top: .125rem;
-    transform: scale(.5,.5);
+    top: 0.125rem;
+    transform: scale(0.5, 0.5);
   }
 }
-
 
 //
 //
@@ -255,7 +227,7 @@ img.logo {
   margin: 0;
   line-height: 1rem;
   position: fixed;
-  top: .75rem;
+  top: 0.75rem;
   left: 50%;
 }
 
@@ -284,25 +256,24 @@ nav {
   }
 
   @media #{$header-break-530} {
-   margin-top: 2rem;
-   text-align: center;
- }
+    margin-top: 2rem;
+    text-align: center;
+  }
 
- a {
-   margin-right: 1rem;
-   transition: all 500ms ease-in-out;
+  a {
+    margin-right: 1rem;
+    transition: all 500ms ease-in-out;
 
-   @media #{$header-break-1020} {
-     margin-right: .5rem;
-   }
+    @media #{$header-break-1020} {
+      margin-right: 0.5rem;
+    }
 
-   @media #{$header-break-530} {
-     display: block;
-     margin: 0 2rem;
-     line-height: 1.25rem;
-
-   }
- }
+    @media #{$header-break-530} {
+      display: block;
+      margin: 0 2rem;
+      line-height: 1.25rem;
+    }
+  }
 }
 
 //               ##                         ##
@@ -321,9 +292,9 @@ nav {
   }
   @media #{$header-break-800} {
     position: fixed;
-    right: .25rem;
+    right: 0.25rem;
     z-index: 11;
-    top: .25rem;
+    top: 0.25rem;
     margin: 0;
   }
   @media #{$header-break-365} {
@@ -331,7 +302,6 @@ nav {
     width: auto;
   }
 }
-
 
 //    ##
 //    ##
@@ -381,40 +351,39 @@ div {
     transition: 1s opacity;
     transform: translateX(50%);
 
-    background: url('../images/coffee.jpg') no-repeat;
+    background: url("../images/coffee.jpg") no-repeat;
     background-size: cover;
   }
 }
 
 .lovers {
   background-color: $brown;
-  background-image: url('../images/lovers.jpg');
+  background-image: url("../images/lovers.jpg");
   background-attachment: fixed;
 }
 
 .fastidious {
-  background-image: url('../images/fastidious.jpg');
+  background-image: url("../images/fastidious.jpg");
   background-position: center center;
 }
 
 .visitors {
   background-color: $brown;
-  background-image: url('../images/visitors.jpg');
+  background-image: url("../images/visitors.jpg");
   background-attachment: fixed;
   background-position: bottom center;
 }
 
 .sharing {
-  background-image: url('../images/sharing.jpg');
+  background-image: url("../images/sharing.jpg");
   background-position: bottom center;
 }
 
 .signup {
   background-color: $brown;
-  background-image: url('../images/signup.jpg');
+  background-image: url("../images/signup.jpg");
   background-attachment: fixed;
 }
-
 
 //      ####                                ##
 //     ##                                   ##
@@ -447,7 +416,7 @@ div {
     padding: 8rem 4rem 2rem;
   }
 
-  background-color: hsla(22, 26%, 27%, .35);
+  background-color: hsla(22, 26%, 27%, 0.35);
 }
 
 .hero-inner {
@@ -470,8 +439,6 @@ div {
     display: none;
   }
 }
-
-
 
 //      ####                       ##
 //     ##                          ##
@@ -528,19 +495,11 @@ h2 {
   text-align: center;
 }
 
-
 h3 {
   font-weight: 300;
 
   text-align: right;
 }
-
-
-
-
-
-
-
 
 //     ###       ##              ##
 //      ##       ##              ##
@@ -602,7 +561,7 @@ a.down-arrow {
   font-weight: bold;
   color: $tan;
 
-  padding: 0 .375rem .25rem;
+  padding: 0 0.375rem 0.25rem;
   border: 3px solid $tan;
   border-radius: 50px;
 
@@ -612,11 +571,6 @@ a.down-arrow {
     border: 3px solid $white;
   }
 }
-
-
-
-
-
 
 //    ##                  ##       ##
 //    ##                  ##       ##
@@ -633,7 +587,7 @@ a.down-arrow {
   font: inherit;
   line-height: 1rem;
 
-  padding: .25rem 2rem;
+  padding: 0.25rem 2rem;
 
   border: $white;
   border-radius: 7.5px;
